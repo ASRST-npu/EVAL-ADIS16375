@@ -48,7 +48,7 @@ extern uint16_t st1,st2,st3;
   */
 
 
-
+//read
 void Gyro_read(void)
 {
 	uint16_t reg_gx,reg_gy,reg_gz;
@@ -104,7 +104,7 @@ void Acc_read(void)
 		
 }
 
-/*3.12£aadis16375_imu(), still have bug*/
+/*3.12?aadis16375_imu(), still have bug*/
 void adis16375_imu_read(float acc[3], float gyro[3], float* Tempetature)
 {
 	uint16_t reg_ax,reg_ay,reg_az,reg_gx,reg_gy,reg_gz;
