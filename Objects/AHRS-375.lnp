@@ -1,0 +1,22 @@
+--cpu Cortex-M4.fp
+".\objects\main.o"
+".\objects\stm32f4xx_it.o"
+".\objects\system_stm32f4xx.o"
+".\objects\configuration.o"
+".\objects\ahrs.o"
+".\objects\adis16375_f4.o"
+".\objects\hmc5883_f4.o"
+".\objects\startup_stm32f40xx.o"
+".\objects\stm32f4xx_gpio.o"
+".\objects\stm32f4xx_rcc.o"
+".\objects\stm32f4xx_spi.o"
+".\objects\stm32f4xx_tim.o"
+".\objects\stm32f4xx_usart.o"
+".\objects\stm32f4xx_exti.o"
+".\objects\stm32f4xx_syscfg.o"
+".\objects\misc.o"
+".\objects\stm32f4xx_i2c.o"
+--library_type=microlib --nodebug --strict --scatter ".\Objects\AHRS-375.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\AHRS-375.map" -o .\Objects\AHRS-375.axf
